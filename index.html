@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="app.css">
+  
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <!--<script src="contact-us/contact-us.component.js"></script>
+  <script src="contact-us/contact-us.module.js"></script>
+  <script src="consultancy/consultancy.component.js"></script>
+  <script src="consultancy/consultancy.module.js"></script>-->
+</head>
+<body ng-app="myApp">
+
+<div class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Ghost Writer</a>
+    </div>
+    <ul class="nav navbar-nav" style="float:right;">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+      <li><a href="#">Page 3</a></li>
+    </ul>
+  </div>
+</div>
+<div class="container" align="center" style="">
+  <div class="main-circle" id="main-circle">
+  <div class="sub-circle" style="margin-left:-25px;">
+    <div class="home-buttons" onmouseover="menuButOver()" onmouseleave="menuButLev()">
+      <a class="menu-items" id="hom-cont-field" onclick="" href="">
+        <span class="char1 menu-char">H</span>
+        <span class="char2 menu-char">o</span>
+        <span class="char3 menu-char">m</span>
+        <span class="char4 menu-char">e</span>
+      </a>
+    </div>
+    <div class="home-buttons" onmouseover="menuButOver()" onmouseleave="menuButLev()">
+      <a class="menu-items" id="abt-cont-field" href="#about">
+        <span class="abt-char1 menu-char">A</span>
+        <span class="abt-char2 menu-char">b</span>
+        <span class="abt-char3 menu-char">o</span>
+        <span class="abt-char4 menu-char">u</span>
+        <span class="abt-char5 menu-char">t</span>
+        <span class="abt-char6 menu-char"> </span>
+        <span class="abt-char7 menu-char">U</span>
+        <span class="abt-char8 menu-char">s</span>
+      </a>
+    </div>
+    <div class="home-buttons" onmouseover="menuButOver()" onmouseleave="menuButLev()">
+      <a class="menu-items" id="consl-cont-field" href="#consultancy">
+        <span class="consl-char1 menu-char">C</span>
+        <span class="consl-char2 menu-char">o</span>
+        <span class="consl-char3 menu-char">n</span>
+        <span class="consl-char4 menu-char">s</span>
+        <span class="consl-char5 menu-char">u</span>
+        <span class="consl-char6 menu-char">l</span>
+        <span class="consl-char7 menu-char">t</span>
+        <span class="consl-char8 menu-char">a</span>
+        <span class="consl-char9 menu-char">n</span>
+        <span class="consl-char10 menu-char">c</span>
+        <span class="consl-char11 menu-char">y</span>
+      </a>
+    </div>
+    <div class="home-buttons" onmouseover="menuButOver()" onmouseleave="menuButLev()">
+      <a class="menu-items" id="mark-cont-field" href="#marketing">
+        <span class="mark-char1 menu-char">M</span>
+        <span class="mark-char2 menu-char">a</span>
+        <span class="mark-char3 menu-char">r</span>
+        <span class="mark-char4 menu-char">k</span>
+        <span class="mark-char5 menu-char">e</span>
+        <span class="mark-char6 menu-char">t</span>
+        <span class="mark-char7 menu-char">i</span>
+        <span class="mark-char8 menu-char">n</span>
+        <span class="mark-char9 menu-char">g</span>
+      </a>
+    </div>
+    <div class="home-buttons" onmouseover="menuButOver()" onmouseleave="menuButLev()">
+      <a class="menu-items" id="pub-cont-field" href="#publishing">
+        <span class="pub-char1 menu-char">P</span>
+        <span class="pub-char2 menu-char">u</span>
+        <span class="pub-char3 menu-char">b</span>
+        <span class="pub-char4 menu-char">l</span>
+        <span class="pub-char5 menu-char">i</span>
+        <span class="pub-char6 menu-char">s</span>
+        <span class="pub-char7 menu-char">h</span>
+        <span class="pub-char8 menu-char">i</span>
+        <span class="pub-char9 menu-char">n</span>
+        <span class="pub-char10 menu-char">g</span>
+      </a>
+    </div>
+    <div class="home-buttons" onmouseover="menuButOver()" onmouseleave="menuButLev()">
+      <a class="menu-items" id="pr-cont-field" href="#pr">
+        <span class="pr-char1 menu-char"></span>
+        <span class="pr-char2 menu-char">P</span>
+        <span class="pr-char3 menu-char">R</span>
+        <span class="pr-char4 menu-char"></span>
+      </a>
+    </div>
+    <div class="home-buttons" onmouseover="menuButOver()" onmouseleave="menuButLev()">
+      <a class="menu-items" id="cont-cont-field" ng-click="" href="#contact-us">
+        <span class="cont-char1 menu-char">C</span>
+        <span class="cont-char2 menu-char">o</span>
+        <span class="cont-char3 menu-char">n</span>
+        <span class="cont-char4 menu-char">t</span>
+        <span class="cont-char5 menu-char">a</span>
+        <span class="cont-char6 menu-char">c</span>
+        <span class="cont-char7 menu-char">t</span>
+      </a>
+    </div>
+    </div>
+  </div>
+  <div class="middle-menu-log">
+  </div>
+</div>
+
+<div ng-view class="main-child-elem"></div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  
+  <script src="app.js"></script>
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
+</body>
+</html>
