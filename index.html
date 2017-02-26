@@ -36,11 +36,11 @@
     </ul>
   </div>
 </div>
-<div class="container" align="center" style="">
-  <div class="main-circle" id="main-circle">
+<div class="container menu-cont" align="center" id="menuContainer" ng-hide="myVar">
+  <div class="main-circle" id="mainCircle">
   <div class="sub-circle" style="margin-left:-25px;">
     <div class="home-buttons" onmouseover="menuButOver()" onmouseleave="menuButLev()">
-      <a class="menu-items" id="hom-cont-field" onclick="" href="">
+      <a class="menu-items" id="hom-cont-field" ng-click="myVar=true" href="#">
         <span class="char1 menu-char">H</span>
         <span class="char2 menu-char">o</span>
         <span class="char3 menu-char">m</span>
@@ -48,7 +48,7 @@
       </a>
     </div>
     <div class="home-buttons" onmouseover="menuButOver()" onmouseleave="menuButLev()">
-      <a class="menu-items" id="abt-cont-field" href="#about">
+      <a class="menu-items" id="abt-cont-field" ng-click="myVar=true" href="#about">
         <span class="abt-char1 menu-char">A</span>
         <span class="abt-char2 menu-char">b</span>
         <span class="abt-char3 menu-char">o</span>
@@ -60,7 +60,7 @@
       </a>
     </div>
     <div class="home-buttons" onmouseover="menuButOver()" onmouseleave="menuButLev()">
-      <a class="menu-items" id="consl-cont-field" href="#consultancy">
+      <a class="menu-items" id="consl-cont-field" ng-click="myVar=true" href="#consultancy">
         <span class="consl-char1 menu-char">C</span>
         <span class="consl-char2 menu-char">o</span>
         <span class="consl-char3 menu-char">n</span>
@@ -75,7 +75,7 @@
       </a>
     </div>
     <div class="home-buttons" onmouseover="menuButOver()" onmouseleave="menuButLev()">
-      <a class="menu-items" id="mark-cont-field" href="#marketing">
+      <a class="menu-items" id="mark-cont-field" ng-click="myVar=true" href="#marketing">
         <span class="mark-char1 menu-char">M</span>
         <span class="mark-char2 menu-char">a</span>
         <span class="mark-char3 menu-char">r</span>
@@ -88,7 +88,7 @@
       </a>
     </div>
     <div class="home-buttons" onmouseover="menuButOver()" onmouseleave="menuButLev()">
-      <a class="menu-items" id="pub-cont-field" href="#publishing">
+      <a class="menu-items" id="pub-cont-field" ng-click="myVar=true" href="#publishing">
         <span class="pub-char1 menu-char">P</span>
         <span class="pub-char2 menu-char">u</span>
         <span class="pub-char3 menu-char">b</span>
@@ -102,7 +102,7 @@
       </a>
     </div>
     <div class="home-buttons" onmouseover="menuButOver()" onmouseleave="menuButLev()">
-      <a class="menu-items" id="pr-cont-field" href="#pr">
+      <a class="menu-items" id="pr-cont-field" ng-click="myVar=true" href="#pr">
         <span class="pr-char1 menu-char"></span>
         <span class="pr-char2 menu-char">P</span>
         <span class="pr-char3 menu-char">R</span>
@@ -110,7 +110,7 @@
       </a>
     </div>
     <div class="home-buttons" onmouseover="menuButOver()" onmouseleave="menuButLev()">
-      <a class="menu-items" id="cont-cont-field" ng-click="" href="#contact-us">
+      <a class="menu-items" id="cont-cont-field" ng-click="myVar=true" href="#contact-us">
         <span class="cont-char1 menu-char">C</span>
         <span class="cont-char2 menu-char">o</span>
         <span class="cont-char3 menu-char">n</span>
@@ -122,18 +122,20 @@
     </div>
     </div>
   </div>
-  <div class="middle-menu-log">
+  <div class="middle-menu-log" id="middleMenuLogg">
   </div>
 </div>
 
-<div ng-view class="main-child-elem"></div>
+<div class="container main-child-element" ng-view></div>
+
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
-  
+
   <script src="app.js"></script>
   <script src="app.module.js"></script>
   <script src="app.config.js"></script>
+  <script src="app.animations.js"></script>
 </body>
 </html>
