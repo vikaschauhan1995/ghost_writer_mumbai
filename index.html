@@ -40,7 +40,7 @@
   <div class="main-circle" id="mainCircle">
   <div class="sub-circle" style="margin-left:-25px;">
     <div class="home-buttons" onmouseover="menuButOver()" onmouseleave="menuButLev()">
-      <a class="menu-items" id="hom-cont-field" ng-click="myVar=true" href="#">
+      <a class="menu-items" id="hom-cont-field" ng-click="myVar=false" href="#">
         <span class="char1 menu-char">H</span>
         <span class="char2 menu-char">o</span>
         <span class="char3 menu-char">m</span>
@@ -123,11 +123,20 @@
     </div>
   </div>
   <div class="middle-menu-log" id="middleMenuLogg">
+    <img src="img/ghost_writer.svg" height="300" widht="" />
   </div>
 </div>
-
+<div class="back-button">
+  <a href="#">
+    <button ng-show="myVar" ng-click="myVar=false">Go Back</button>
+  </a>
+</div>
 <div class="container main-child-element" ng-view></div>
 
+<!-- Footer Area -->
+
+
+<!-- Footer Area end -->
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
