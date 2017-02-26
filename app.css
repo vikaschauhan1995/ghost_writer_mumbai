@@ -123,6 +123,7 @@
   border:1px solid #c6c6c6;
   box-shadow:2px 2px 5px 0px #c6c6c6;
   border-radius:5px;
+  height:auto;
 }
 .child-inner-element{
   transform:translateX(0);
@@ -172,6 +173,9 @@
   background-color:red;
 }
 /* h3 for inner page sub heading*/
+h1{
+  color:#636363;
+}
 h3{
   color:#636363;
 }
@@ -183,4 +187,24 @@ p{
 }
 label{
   color:#636363;
+}
+.back-btn:after{
+  display: inline-block;
+  content: "\00d7"; /* This will render the 'X' */
+  font-size:40px;
+  height:50px;
+  width:50px;
+  color:red;
+  margin-left:25px;
+}
+.back-btn:hover:after{
+  color:blue;
+}
+.loadingC{
+  background-color:yellow;
+  height:100%;
+  width:100%;
+  position:fixed;
+  left:0;
+  top:0;
 }

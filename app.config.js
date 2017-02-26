@@ -3,7 +3,7 @@
 angular.module("myApp").config(function($routeProvider){
   $routeProvider
   .when("/about",{
-    templateUrl:'about/about.template.html'
+    templateUrl:'about/about.template.html' 
   })
   .when("/contact-us",{
     templateUrl:'contact-us/contact-us.template.html'
@@ -22,4 +22,5 @@ angular.module("myApp").config(function($routeProvider){
   })
   .otherwise("/");
 });
+
 

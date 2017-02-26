@@ -23,6 +23,8 @@
 </head>
 <body ng-app="myApp">
 
+
+
 <div class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
@@ -127,14 +129,18 @@
   </div>
 </div>
 <div class="back-button">
-  <a href="#">
-    <button ng-show="myVar" ng-click="myVar=false">Go Back</button>
-  </a>
+    <div class="back-btn-con">
+      <a href="#">
+          <div class="back-btn" ng-show="myVar"  ng-click="myVar=false"></div>
+      </a>  
+    </div>
 </div>
 <div class="container main-child-element" ng-view></div>
 
-<!-- Footer Area -->
 
+
+
+<!-- Footer Area -->
 
 <!-- Footer Area end -->
 
