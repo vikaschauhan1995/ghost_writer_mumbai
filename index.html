@@ -25,7 +25,7 @@
 
 
 
-<div class="navbar navbar-default">
+<div class="navbar navbar-default navbar-glob">
   <div class="container">
     <div class="navbar-header">
       <div class="row">
@@ -58,15 +58,16 @@
 <div class="container menu-cont hidden-xs" align="center" id="menuContainer" ng-hide="myVar">
   <div class="main-circle" id="mainCircle">
   <div class="sub-circle" style="margin-left:-25px;">
-    <div class="home-buttons" onmouseover="menuButOver()" onmouseleave="menuButLev()">
-      <a class="menu-items" id="hom-cont-field" ng-click="myVar=false" href="#">
-        <span class="char1 menu-char">H</span>
-        <span class="char2 menu-char">o</span>
-        <span class="char3 menu-char">m</span>
-        <span class="char4 menu-char">e</span>
+    <div class="home-buttons" onmouseover="menuButOver('ofs-cont-field',5)" onmouseleave="menuButLev('ofs-cont-field',5)">
+      <a class="menu-items" id="ofs-cont-field" ng-click="myVar=true" href="#featured-services">
+        <span class="char1 menu-char"></span>
+        <span class="char2 menu-char">O</span>
+        <span class="char3 menu-char">F</span>
+        <span class="char4 menu-char">S</span>
+        <span class="char5 menu-char"></span>
       </a>
     </div>
-    <div class="home-buttons" onmouseover="menuButOver()" onmouseleave="menuButLev()">
+    <div class="home-buttons" onmouseover="menuButOver('abt-cont-field',8)" onmouseleave="menuButLev('abt-cont-field',8)">
       <a class="menu-items" id="abt-cont-field" ng-click="myVar=true" href="#about">
         <span class="abt-char1 menu-char">A</span>
         <span class="abt-char2 menu-char">b</span>
@@ -78,7 +79,7 @@
         <span class="abt-char8 menu-char">s</span>
       </a>
     </div>
-    <div class="home-buttons" onmouseover="menuButOver()" onmouseleave="menuButLev()">
+    <div class="home-buttons" onmouseover="menuButOver('consl-cont-field',11)" onmouseleave="menuButLev('consl-cont-field',11)">
       <a class="menu-items" id="consl-cont-field" ng-click="myVar=true" href="#consultancy">
         <span class="consl-char1 menu-char">C</span>
         <span class="consl-char2 menu-char">o</span>
@@ -93,7 +94,7 @@
         <span class="consl-char11 menu-char">y</span>
       </a>
     </div>
-    <div class="home-buttons" onmouseover="menuButOver()" onmouseleave="menuButLev()">
+    <div class="home-buttons" onmouseover="menuButOver('mark-cont-field',9)" onmouseleave="menuButLev('mark-cont-field',9)">
       <a class="menu-items" id="mark-cont-field" ng-click="myVar=true" href="#marketing">
         <span class="mark-char1 menu-char">M</span>
         <span class="mark-char2 menu-char">a</span>
@@ -106,7 +107,7 @@
         <span class="mark-char9 menu-char">g</span>
       </a>
     </div>
-    <div class="home-buttons" onmouseover="menuButOver()" onmouseleave="menuButLev()">
+    <div class="home-buttons" onmouseover="menuButOver('pub-cont-field',10)" onmouseleave="menuButLev('pub-cont-field',10)">
       <a class="menu-items" id="pub-cont-field" ng-click="myVar=true" href="#publishing">
         <span class="pub-char1 menu-char">P</span>
         <span class="pub-char2 menu-char">u</span>
@@ -120,7 +121,7 @@
         <span class="pub-char10 menu-char">g</span>
       </a>
     </div>
-    <div class="home-buttons" onmouseover="menuButOver()" onmouseleave="menuButLev()">
+    <div class="home-buttons" onmouseover="menuButOver('pr-cont-field',4)" onmouseleave="menuButLev('pr-cont-field',4)">
       <a class="menu-items" id="pr-cont-field" ng-click="myVar=true" href="#pr">
         <span class="pr-char1 menu-char"></span>
         <span class="pr-char2 menu-char">P</span>
@@ -128,7 +129,7 @@
         <span class="pr-char4 menu-char"></span>
       </a>
     </div>
-    <div class="home-buttons" onmouseover="menuButOver()" onmouseleave="menuButLev()">
+    <div class="home-buttons" onmouseover="menuButOver('cont-cont-field',7)" onmouseleave="menuButLev('cont-cont-field',7)">
       <a class="menu-items" id="cont-cont-field" ng-click="myVar=true" href="#contact-us">
         <span class="cont-char1 menu-char">C</span>
         <span class="cont-char2 menu-char">o</span>
@@ -142,7 +143,9 @@
     </div>
   </div>
   <div class="middle-menu-log" id="middleMenuLogg">
-    <img src="img/ghost_writer.svg" height="300" widht="" />
+    <a href="#harsh-agarwal">
+      <img src="img/ghost_writer.svg" ng-click="myVar=true" height="300" widht="300" />
+    </a>
   </div>
 </div>
 <div class="back-button">
@@ -153,7 +156,9 @@
     </div>
 </div>
 <div class="container main-child-element" ng-view></div>
-
+<div class="container">
+  <div class="empty-space"></div>
+</div>
 
 
 

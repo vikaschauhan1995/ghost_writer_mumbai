@@ -23,6 +23,9 @@ angular.module("myApp").config(function($routeProvider){
   .when('/featured-services',{
     templateUrl:'/featured-services/featured-services.template.html'
   })
+  .when('/harsh-agarwal',{
+    templateUrl:'/founder/founder.template.html'
+  })
   .otherwise("/");
 });
 
