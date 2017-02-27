@@ -6,6 +6,15 @@ body{
   background-color:white;
   box-shadow:0px 2px 5px #a8a8a8;
 }
+.nav-bar-list li{
+  margin-top:2px;
+  border-bottom:0px solid white;
+}
+.nav-bar-list li:hover{
+  transition:0.15s;
+  box-shadow:0px 5px 2px black;
+  border-bottom:4px solid blue;
+}
 .main-circle{
   width:500px;
   height:500px;
@@ -99,74 +108,137 @@ body{
   transition:0.5s;
 }
 .middle-menu-log:hover{
+  -webkit-transition:0.5;
+  -moz-transition:0.5s;
+  -o-transition:0.5s;
   transition:0.5s;
   transform:scale(0.95,0.95);
   cursor:pointer;
 }
 #ofs-cont-field:hover .menu-char{
   background-color:#6B6B6B;
+  -webkit-transition:0.3;
+  -moz-transition:0.3s;
+  -o-transition:0.3s;
   transition:0.3s;
 }
 #abt-cont-field:hover .menu-char{
   background-color:#6B6B6B;
+  -webkit-transition:0.2;
+  -moz-transition:0.2s;
+  -o-transition:0.2s;
   transition:0.2s;
 }
 #consl-cont-field:hover .menu-char{
   background-color:#6B6B6B;
+  -webkit-transition:0.2;
+  -moz-transition:0.2s;
+  -o-transition:0.2s;
   transition:0.2s;
 }
 #mark-cont-field:hover .menu-char{
   background-color:#6B6B6B;
+  -webkit-transition:0.2;
+  -moz-transition:0.2s;
+  -o-transition:0.2s;
   transition:0.2s;
 }
 #pub-cont-field:hover .menu-char{
   background-color:#6B6B6B;
+  -webkit-transition:0.2;
+  -moz-transition:0.2s;
+  -o-transition:0.2s;
   transition:0.2s;
 }
 #pr-cont-field:hover .menu-char{
   background-color:#6B6B6B;
+  -webkit-transition:0.2;
+  -moz-transition:0.2s;
+  -o-transition:0.2s;
   transition:0.2s;
 }
 #cont-cont-field:hover .menu-char{
   background-color:#6B6B6B;
+  -webkit-transition:0.2;
+  -moz-transition:0.2s;
+  -o-transition:0.2s;
   transition:0.2s;
 }
 .main-child-element{
+  
+}
+.child-inner-element{
+  height:auto;
+  margin-top:;
+  position:relative;
+  
+  opacity:0;
   border:1px solid #c6c6c6;
   box-shadow:0px 0px 10px 0px white;
   border-radius:5px;
-  height:auto;
+  
   background-color:white;
-}
-.child-inner-element{
-  transform:translateX(0);
-}
-.child-inner-element.showed{
-  margin-top:50px;
-  position:relative;
-  opacity:1;
+  padding-left:35px;
+  padding-right:35px;
+  
+  -webkit-transform:translate(0,-100px);
+  -moz-transform:translate(0,-100px);
+  -o-transform:translate(0,-100px);
+  transform:translate(0,-100px);
 
-  transition:linear all 1s;
   -webkit-transition:linear all 1s;
   -moz-transition:linear all 1s;
   -o-transition:linear all 1s;
-  animation:anim 2.5s 1;
-  -webkit-animation:anim 2.5s 1;
-  -moz-animation:anim 2.5s 1;
-  -o-animation:anim 2.5s 1;
+  transition:linear all 1s;
 }
+.child-inner-element.showed{
+  -webkit-animation:anim 1.5s;
+  -moz-animation:anim 1.5s;
+  -o-animation:anim 1.5s;
+  animation:anim 1.5s;
+  opacity:1;
+  transform:scale(1,1);
+}
+.child-inner-element.showed.ng-scope{
+  -webkit-animation:anim1 1s;
+  -moz-animation:anim1 1s;
+  -o-animation:anim1 1s;
+  animation:anim1 1s;
+  opacity:1;
+}
+@-webkit-keyframes anim1{
+from{transform:scale(0,0);}
+  to{transform:scale(1,1);
+}}
+@-moz-keyframes anim1{
+from{transform:scale(0,0);}
+  to{transform:scale(1,1);
+}}
+@-o-keyframes anim1{
+from{transform:scale(0,0);}
+  to{transform:scale(1,1);
+}}
+@keyframes anim1{
+from{transform:scale(0,0);}
+  to{transform:scale(1,1);
+}}
+
+@-webkit-keyframes anim{
+from{opacity:0;transform:translate(0,700px);}
+to{opacity:1;transform:translate(0,0px);
+}}
 @-moz-keyframes anim{
-  0% {
-    transform: translateX(0);
-    opacity:0.25;
-  }
-  50%{
-    opacity:0.5;
-  }
-  100% {
-    opacity:1;
-  }
-}
+from{opacity:0;transform:translate(0,700px);}
+to{opacity:1;transform:translate(0,0px);
+}}
+@-o-keyframes anim{
+from{opacity:0;transform:translate(0,700px);}
+to{opacity:1;transform:translate(0,0px);
+}}
+@keyframes anim{
+from{opacity:0;transform:translate(0,700px);}
+to{opacity:1;transform:translate(0,0px);
+}}
 .menu-cont{
   transition:all linear 0.5s;
   
@@ -251,4 +323,10 @@ label{
 .empty-space{
   width:100%;
   height:32px;
+}
+.logo-first-char{
+  margin-top:-8px;
+}
+.nav-a-attribute:hover{
+  text-decoration:none;
 }
