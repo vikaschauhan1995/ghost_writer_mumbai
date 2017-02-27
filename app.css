@@ -129,7 +129,7 @@
   transform:translateX(0);
 }
 .child-inner-element.showed{
-  height:200px;
+  margin-top:50px;
   background-color:white;
   position:relative;
   opacity:1;
@@ -207,4 +207,25 @@ label{
   position:fixed;
   left:0;
   top:0;
+}
+.smallMenu a{
+  text-decoration:none;
+}
+.smallMenu li{
+  list-style-type:none;
+  width:100%;
+  background-color:#eaeaea;
+  padding:10px;
+  font-size:18px;
+  font-family:Arial;
+  font-size:normal;
+}
+.smallMenu li:hover{
+  text-decoration:none;
+  background-color:#c2c2c2;
+}
+@media screen and (min-width:400px){
+  .navbar-header{
+    text-align:center;
+  }
 }

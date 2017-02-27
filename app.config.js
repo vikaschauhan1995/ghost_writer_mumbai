@@ -20,6 +20,9 @@ angular.module("myApp").config(function($routeProvider){
   .when("/pr",{
     templateUrl:'pr/pr.template.html'
   })
+  .when('/featured-services',{
+    templateUrl:'/featured-services/featured-services.template.html'
+  })
   .otherwise("/");
 });
 
