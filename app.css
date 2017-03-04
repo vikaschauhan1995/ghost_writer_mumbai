@@ -165,7 +165,7 @@ body{
   transition:0.2s;
 }
 .main-child-element{
-  
+
 }
 .child-inner-element{
   height:auto;
@@ -315,7 +315,7 @@ label{
 }
 .theme-bottom-border{
   border-bottom-right-radius:10px;
-  border-bottom:2px solid grey;
+  border-bottom:2px solid #408ccd;
 }
 .theme-thee-in-one img{
   width:100%;
@@ -331,4 +331,34 @@ label{
   text-decoration:none;
 }/* random comment*/
 /* comment 2 */
-
+.footer-cont{
+  color:white;
+  
+}
+.footer-mid{
+  height:270px;
+}
+.footer-cont .footer-mid-left{
+  border-bottom-left-radius:5px;
+  padding-top:20px;
+  padding-bottom:30px;
+  background: -moz-linear-gradient(right, #15558c, #2468a2);
+}
+.footer-cont .footer-mid-right{
+  border-bottom-right-radius:5px;
+  padding-top:20px;
+  padding-bottom:30px;
+  background: -moz-linear-gradient(left, #15558c, #2468a2);
+}
+.footer-cntnt p{
+  color:white;
+}
+.footer-cntnt a{
+  color:white;
+}
+.footer-cntnt li{
+  list-style-type:none;
+}
+.footer-cntnt li:hover{
+  border-left:3px solid #104c80;
+}
