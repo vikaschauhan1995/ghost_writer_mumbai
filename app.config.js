@@ -2,6 +2,9 @@
 
 angular.module("myApp").config(function($routeProvider){
   $routeProvider
+  .when("/home",{
+    templateUrl:'home-slice/home-slice.template.html'
+  })
   .when("/about",{
     templateUrl:'about/about.template.html' 
   })
@@ -26,7 +29,7 @@ angular.module("myApp").config(function($routeProvider){
   .when('/harsh-agarwal',{
     templateUrl:'/founder/founder.template.html'
   })
-  .otherwise("/");
+  .otherwise("/home");
 });
 
 
