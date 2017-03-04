@@ -164,6 +164,12 @@ body{
   -o-transition:0.2s;
   transition:0.2s;
 }
+.home-slice-cont{
+  border:1px solid #c6c6c6;
+  box-shadow:0px 0px 10px 0px white;
+  border-radius:5px;
+  background-color:white;
+}
 .main-child-element{
 
 }
